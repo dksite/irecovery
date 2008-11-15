@@ -3,7 +3,7 @@ CFLAGS_OSX = -lusb -framework CoreFoundation -framework IOKit
 CFLAGS_LNX = -lusb
 
 all:
-		@echo 'make linux or make macosx'
+		@echo 'Usage: make linux or make macosx'
 	
 macosx:
 		$(CC) iRecovery.c -o iRecovery $(CFLAGS_OSX)
