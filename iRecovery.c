@@ -223,7 +223,8 @@ void iSendFile(char *filename)
 	if(!devPhone) {
 		devPhone = iUSBInit(RECOVERY_MODE);
 		if(devPhone)
-			printf("Found iPhone/iPod in Recovery mode\n");
+			printf("Found iPhone/iPod in Recovery mode 
+0x1281\n");
 	} else {
 		printf("Found iPhone/iPod in DFU/WTF mode\n");
 	}
@@ -306,7 +307,8 @@ int iShowUsage(void)
 {
 		printf("./iRecovery [args]\n");
 		printf("\t-f <file>\t\tupload file in DFU, WTF and Recovery modes\n");
-		printf("\t-s\t\t\tstarts a shell in Recovery mode\n\n");
+		printf("\t-s\t\t\tstarts a shell in Recovery mode 0x1281
+\n\n");
 }
 
 /*
